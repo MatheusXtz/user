@@ -1,4 +1,4 @@
-@(id:Long,userForm:Form[User]) 
+@(id:Long,userForm:Form[Usuario]) 
 
 
 @main("Alterar User"){
@@ -12,12 +12,12 @@
 		@helper.form(routes.UserCrud.alterar(id)) {
       <form class="form-horizontal">
 		
-		<legend>Alterar Curso</legend>
+		<legend>Alterar Usuario</legend>
 
 		<div class="control-group">
 		  <div class="controls">
 
-		 @helper.inputText(userForm("nome"), '_label -> "Nome do Curso:")
+		 @helper.inputText(userForm("nome"), '_label -> "Nome do Usuario:")
 
 		 </div>
 		</div>
