@@ -12,9 +12,20 @@ public class Usuario extends Model {
     @GeneratedValue
 	private Long idUser;
     
+    
     private String nome;
     
-    public static Model.Finder<Long, Usuario> find = new Model.Finder<Long, Usuario>(
+    private String cpf; 
+    
+    public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public static Model.Finder<Long, Usuario> find = new Model.Finder<Long, Usuario>(
 			Long.class, Usuario.class);
 
 	public Long getIdUser() {
